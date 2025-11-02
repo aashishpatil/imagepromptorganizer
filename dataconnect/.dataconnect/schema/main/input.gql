@@ -1,0 +1,293 @@
+"""
+✨ `MediaPrompt_KeyOutput` returns the primary key fields of table type `MediaPrompt`.
+
+It has the same format as `MediaPrompt_Key`, but is only used as mutation return value.
+"""
+scalar MediaPrompt_KeyOutput
+"""
+✨ Generated data input type for table 'MediaPrompt'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input MediaPrompt_Data {
+  """
+  ✨ Generated from Field `MediaPrompt`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `MediaPrompt`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributedTo` of type `String`
+  """
+  attributedTo: String
+  """
+  ✨ `_expr` server value variant of `attributedTo` (✨ Generated from Field `MediaPrompt`.`attributedTo` of type `String`)
+  """
+  attributedTo_expr: String_Expr
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributionURL` of type `String`
+  """
+  attributionURL: String
+  """
+  ✨ `_expr` server value variant of `attributionURL` (✨ Generated from Field `MediaPrompt`.`attributionURL` of type `String`)
+  """
+  attributionURL_expr: String_Expr
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp
+  """
+  ✨ `_expr` server value variant of `createdAt` (✨ Generated from Field `MediaPrompt`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_expr: Timestamp_Expr
+  """
+  ✨ `_time` server value variant of `createdAt` (✨ Generated from Field `MediaPrompt`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_time: Timestamp_Relative
+  """
+  ✨ `_update` server value variant of `createdAt` (✨ Generated from Field `MediaPrompt`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_update: [Timestamp_Update!]
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdBy` of type `String!`
+  """
+  createdBy: String
+  """
+  ✨ `_expr` server value variant of `createdBy` (✨ Generated from Field `MediaPrompt`.`createdBy` of type `String!`)
+  """
+  createdBy_expr: String_Expr
+  """
+  ✨ Generated from Field `MediaPrompt`.`name` of type `String!`
+  """
+  name: String
+  """
+  ✨ `_expr` server value variant of `name` (✨ Generated from Field `MediaPrompt`.`name` of type `String!`)
+  """
+  name_expr: String_Expr
+  """
+  ✨ Generated from Field `MediaPrompt`.`prompt` of type `String!`
+  """
+  prompt: String
+  """
+  ✨ `_expr` server value variant of `prompt` (✨ Generated from Field `MediaPrompt`.`prompt` of type `String!`)
+  """
+  prompt_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'MediaPrompt'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input MediaPrompt_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [MediaPrompt_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: MediaPrompt_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [MediaPrompt_Filter!]
+  """
+  ✨ Generated from Field `MediaPrompt`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributedTo` of type `String`
+  """
+  attributedTo: String_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributionURL` of type `String`
+  """
+  attributionURL: String_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdBy` of type `String!`
+  """
+  createdBy: String_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`name` of type `String!`
+  """
+  name: String_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`prompt` of type `String!`
+  """
+  prompt: String_Filter
+}
+"""
+✨ Generated first-row input type for table 'MediaPrompt'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input MediaPrompt_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [MediaPrompt_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: MediaPrompt_Filter
+}
+"""
+✨ Generated having input type for table 'MediaPrompt'. This input allows you to filter groups during aggregate queries using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input MediaPrompt_Having {
+  """
+  Apply multiple Having conditions using `AND` logic.
+  """
+  _and: [MediaPrompt_Having!]
+  """
+  Whether to apply DISTINCT to the aggregate function.
+  """
+  _distinct: Boolean
+  """
+  Negate the result of the provided Having condition.
+  """
+  _not: MediaPrompt_Having
+  """
+  Apply multiple Having conditions using `OR` logic.
+  """
+  _or: [MediaPrompt_Having!]
+  """
+  ✨ Generated from Field `MediaPrompt`.`_count` of type `Int!`
+  """
+  _count: Int_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributedTo_count` of type `Int!`
+  """
+  attributedTo_count: Int_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributionURL_count` of type `Int!`
+  """
+  attributionURL_count: Int_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: Int_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdBy_count` of type `Int!`
+  """
+  createdBy_count: Int_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`id_count` of type `Int!`
+  """
+  id_count: Int_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`name_count` of type `Int!`
+  """
+  name_count: Int_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`prompt_count` of type `Int!`
+  """
+  prompt_count: Int_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: Timestamp_Filter
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: Timestamp_Filter
+}
+"""
+✨ Generated key input type for table 'MediaPrompt'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input MediaPrompt_Key {
+  """
+  ✨ Generated from Field `MediaPrompt`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `MediaPrompt`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'MediaPrompt'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input MediaPrompt_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: MediaPrompt_Filter
+}
+"""
+✨ Generated order input type for table 'MediaPrompt'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input MediaPrompt_Order {
+  """
+  ✨ Generated from Field `MediaPrompt`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributedTo` of type `String`
+  """
+  attributedTo: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributionURL` of type `String`
+  """
+  attributionURL: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdBy` of type `String!`
+  """
+  createdBy: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`name` of type `String!`
+  """
+  name: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`prompt` of type `String!`
+  """
+  prompt: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`_count` of type `Int!`
+  """
+  _count: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributedTo_count` of type `Int!`
+  """
+  attributedTo_count: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`attributionURL_count` of type `Int!`
+  """
+  attributionURL_count: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdBy_count` of type `Int!`
+  """
+  createdBy_count: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`id_count` of type `Int!`
+  """
+  id_count: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`name_count` of type `Int!`
+  """
+  name_count: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`prompt_count` of type `Int!`
+  """
+  prompt_count: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: OrderDirection
+  """
+  ✨ Generated from Field `MediaPrompt`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: OrderDirection
+}

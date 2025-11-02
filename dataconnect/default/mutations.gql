@@ -1,0 +1,34 @@
+
+#  **IMPORTANT**
+#   Before deploying to server, be sure to change the auth level to something higher than PUBLIC
+
+# {id: "__REPLACE__", createdBy: "__system__", name: "__REPLACE__", prompt: "__REPLACE__", sourceName: "Gemini App", sourceURL: "https://gemini.google.com"},
+
+
+mutation PublishSystemMediaPrompts @auth(level: USER) {
+    mediaPrompt_upsertMany(data:  [
+        {id: "596F3F80-A867-4539-9DBC-4CF3E08E6201", createdBy: "__system__", name: "Professional Headshot", prompt: "Transform my uploaded photo into a fresh but professional image suitable for a social media profile. The lighting should be natural, flattering, and multidimensional. My head is slightly tilted so it doesn't look stiff and it should look like I'm in a modern, bright office with a blurred background.", attributedTo: "Gemini App", attributionURL: "https://gemini.google.com"},
+        {id: "2F9BA417-6A55-4585-9D2F-1D644A7F9BF1", createdBy: "__system__", name: "Instant Photo", prompt: "Turn my uploaded photo into a full, realistic instant film-style photograph. Show the instant film in its entirety, with the subject captured as a careless, unintentional snapshot. The photo has awkward, off-kilter framing, no clear subject, and a mediocre composition. Include motion blur and harsh overexposure from an on-camera flash, especially near bright or reflective areas. Lighting should be uneven, with blown-out highlights and shadowed areas. The image should feel aggressively mediocre, like it was taken by accident. Apply visible instant film texture, soft film grain, and a subtle vintage tint. Show the classic white instant film border completely, including the wider bottom strip. Add faint smudges, slight bends, or dirt marks on the white frame to enhance realism. Do not crop the instant film—the full rectangular photo and its white border must be shown clearly within the frame of the final image.",  attributedTo: "Gemini App", attributionURL: "https://gemini.google.com"},
+        {id: "C51E011D-AA7F-4398-8A08-823287F6E5CE", createdBy: "__system__", name: "Scaled Figurine", prompt: "From the uploaded picture, create a 1/7 scale commercialized figurine of the characters in the picture, in a realistic style, in a real environment. The figurine is placed on a computer desk. The figurine has a round transparent acrylic base, with no text on the base. The content on the computer screen is a 3D modeling process of this figurine. Next to the computer screen is a toy packaging box, designed in a style reminiscent of high-quality collectible figures, printed with original artwork. The packaging features two-dimensional flat illustrations.",  attributedTo: "Gemini App", attributionURL: "https://gemini.google.com"},
+        {id: "0B7411AE-6443-41B9-AF54-4037EE18263A", createdBy: "__system__", name: "90s Pixie Haircut", prompt: "From the uploaded picture, generate an image of what I would look like with a 90s style pixie haircut.", attributedTo: "Gemini App", attributionURL: "https://gemini.google.com"},
+    ])
+}
+
+mutation AddPrompt($name: String!, $prompt: String!) @auth(level: USER) {
+    mediaPrompt_insert(data:  {
+       name: $name
+       prompt: $prompt
+       createdBy_expr: "auth.uid"
+    })
+}
+
+mutation DeletePrompt($id: UUID!) @auth(level: USER) {
+    mediaPrompt_delete(
+    first: { where: {
+      id: {eq: $id}
+      createdBy: {eq_expr: "auth.uid"}
+    }}
+    )
+}
+
+   

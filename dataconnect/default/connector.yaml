@@ -1,0 +1,10 @@
+
+
+connectorId: "media-prompts"
+authMode: "PUBLIC"
+
+generate:
+   swiftSdk:
+     outputDir: "../../dataconnect-generated/"
+     package: "MediaPromptsData" #Swift Package Name for Generated SDK
+     coreSdkPackageLocation: "/Users/aashishpatil/dev/data-connect-ios-sdk"

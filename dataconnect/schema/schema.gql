@@ -1,0 +1,13 @@
+
+
+
+type MediaPrompt @table {
+    id: UUID! @default(expr: "uuidV4()")
+    name: String!
+    prompt: String!
+    createdBy: String! # uid of user or "__system__" for system provided prompts
+    # shared: Boolean! # if created by user, is this private or shared with others
+    attributedTo: String # credited to
+    attributionURL: String
+    createdAt: Timestamp! @default(expr: "request.time")
+}

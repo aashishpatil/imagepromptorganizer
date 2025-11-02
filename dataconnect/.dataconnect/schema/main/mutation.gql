@@ -1,0 +1,114 @@
+extend type Mutation {
+  """
+  ✨ Insert a single `MediaPrompt` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  mediaPrompt_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: MediaPrompt_Data!
+  ): MediaPrompt_KeyOutput! @fdc_generated(from: "MediaPrompt", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert `MediaPrompt` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  mediaPrompt_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [MediaPrompt_Data!]!
+  ): [MediaPrompt_KeyOutput!]! @fdc_generated(from: "MediaPrompt", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert or update a single `MediaPrompt` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `MediaPrompt`.
+  """
+  mediaPrompt_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: MediaPrompt_Data!
+  ): MediaPrompt_KeyOutput! @fdc_generated(from: "MediaPrompt", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update `MediaPrompt` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `MediaPrompt`.
+  """
+  mediaPrompt_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [MediaPrompt_Data!]!
+  ): [MediaPrompt_KeyOutput!]! @fdc_generated(from: "MediaPrompt", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Update a single `MediaPrompt` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `MediaPrompt` or `null` if not found.
+  """
+  mediaPrompt_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: MediaPrompt_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: MediaPrompt_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: MediaPrompt_Data!
+  ): MediaPrompt_KeyOutput @fdc_generated(from: "MediaPrompt", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update `MediaPrompt` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  mediaPrompt_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: MediaPrompt_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: MediaPrompt_Data!
+  ): Int! @fdc_generated(from: "MediaPrompt", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Delete a single `MediaPrompt` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  mediaPrompt_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: MediaPrompt_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: MediaPrompt_FirstRow
+  ): MediaPrompt_KeyOutput @fdc_generated(from: "MediaPrompt", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete `MediaPrompt` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  mediaPrompt_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: MediaPrompt_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "MediaPrompt", purpose: DELETE_MULTIPLE)
+}

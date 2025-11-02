@@ -1,0 +1,81 @@
+extend type MediaPrompt {
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "MediaPrompt", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `MediaPrompt` table.
+  """
+  _count: Int! @fdc_generated(from: "MediaPrompt.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `MediaPrompt` table where the `attributedTo` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  attributedTo_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "MediaPrompt.attributedTo", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `MediaPrompt` table where the `attributionURL` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  attributionURL_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "MediaPrompt.attributionURL", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `MediaPrompt` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "MediaPrompt.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `MediaPrompt` table where the `createdBy` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdBy_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "MediaPrompt.createdBy", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `MediaPrompt` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "MediaPrompt.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `MediaPrompt` table where the `name` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  name_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "MediaPrompt.name", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `MediaPrompt` table where the `prompt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  prompt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "MediaPrompt.prompt", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `MediaPrompt` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "MediaPrompt.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `MediaPrompt` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "MediaPrompt.createdAt", purpose: QUERY_MAX)
+}

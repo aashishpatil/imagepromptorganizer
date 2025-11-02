@@ -1,0 +1,14 @@
+
+
+
+specVersion: "v1"
+serviceId: "prompts-organizer"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "prompts-organizer"
+      cloudSql:
+        instanceId: "prompts-organizer-instance"
+connectorDirs: ["./default"]
