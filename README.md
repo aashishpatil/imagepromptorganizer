@@ -44,7 +44,8 @@ The application requires a Firebase project with specific services enabled:
 
 This repository includes a pre-configured Data Connect project structure (schema, queries, and supporting files). To utilize it:
 
-* **Install the [Firebase Data Connect iOS SDK](https://github.com/firebase/data-connect-ios-sdk) :** Follow the **"Getting Started"** guide to integrate the Data Connect SDK into your Xcode project.  
+* **Install the [Firebase Data Connect iOS SDK](https://github.com/firebase/data-connect-ios-sdk) :** Follow the **"Getting Started"** guide to integrate the Data Connect SDK into your Xcode project. 
+    * In short -> the cloned Data Connect iOS SDK contains a 'FDC Tools' target. Start the FDC tools via Xcode target (scheme) and set the working directory to be this repo clone. The tool should pick up the project contained in the repo. 
 * **Generated Data Connect Client Code:** The included project already contains schema, queries and generated Swift code for that schema. 
 
 ---
