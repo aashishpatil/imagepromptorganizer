@@ -8,7 +8,11 @@ firebase-debug.log
 pglite-debug.log
 .firebase/logs/vsce-debug.log
 
+Info.plist
 ImagePromptsOrganizer/Info.plist
+
+GoogleService-Info.plist
+ImagePromptsOrganizer/GoogleService-Info.plist
 
 # Xcode user and build data
 ImagePromptsOrganizer/.DS_STORE

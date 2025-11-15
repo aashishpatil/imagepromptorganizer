@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		11131BE52EAF389B00ADB22D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 11131BE42EAF389100ADB22D /* README.md */; };
 		11131BF32EB7BFDD00ADB22D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 11131BF22EB7BFD600ADB22D /* LICENSE */; };
+		11131CAD2EBE5B4E00ADB22D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11131CAC2EBE5B4E00ADB22D /* GoogleService-Info.plist */; };
 		114C319C2E9ACFEF00ABE637 /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = 114C319B2E9ACFEF00ABE637 /* FirebaseAI */; };
 		116A32AB2E92E12500234F56 /* FirebaseDataConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 116A32AA2E92E12500234F56 /* FirebaseDataConnect */; };
 		116A32B12E92FC1C00234F56 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 116A32B02E92FC1C00234F56 /* GoogleSignIn */; };
 		116A32B32E92FC1C00234F56 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 116A32B22E92FC1C00234F56 /* GoogleSignInSwift */; };
 		116A32BC2E9300AE00234F56 /* MediaPromptsData in Frameworks */ = {isa = PBXBuildFile; productRef = 116A32BB2E9300AE00234F56 /* MediaPromptsData */; };
-		116A32C12E9353B000234F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 116A32C02E9353B000234F56 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11131BE42EAF389100ADB22D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		11131BF22EB7BFD600ADB22D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		11131CAC2EBE5B4E00ADB22D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		116A32952E9196DB00234F56 /* ImagePromptsOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePromptsOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		116A32C02E9353B000234F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		116A32C32E9353D300234F56 /* Exceptions for "ImagePromptsOrganizer" folder in "ImagePromptsOrganizer" target */ = {
+		11774B892EBFF9190071E6F1 /* Exceptions for "ImagePromptsOrganizer" folder in "ImagePromptsOrganizer" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -38,7 +38,7 @@
 		116A32972E9196DB00234F56 /* ImagePromptsOrganizer */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				116A32C32E9353D300234F56 /* Exceptions for "ImagePromptsOrganizer" folder in "ImagePromptsOrganizer" target */,
+				11774B892EBFF9190071E6F1 /* Exceptions for "ImagePromptsOrganizer" folder in "ImagePromptsOrganizer" target */,
 			);
 			path = ImagePromptsOrganizer;
 			sourceTree = "<group>";
@@ -64,11 +64,11 @@
 		116A328C2E9196DB00234F56 = {
 			isa = PBXGroup;
 			children = (
+				11131CAC2EBE5B4E00ADB22D /* GoogleService-Info.plist */,
 				11131BF22EB7BFD600ADB22D /* LICENSE */,
 				11131BE42EAF389100ADB22D /* README.md */,
 				116A32972E9196DB00234F56 /* ImagePromptsOrganizer */,
 				116A32962E9196DB00234F56 /* Products */,
-				116A32C02E9353B000234F56 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,7 +157,7 @@
 			files = (
 				11131BE52EAF389B00ADB22D /* README.md in Resources */,
 				11131BF32EB7BFDD00ADB22D /* LICENSE in Resources */,
-				116A32C12E9353B000234F56 /* GoogleService-Info.plist in Resources */,
+				11131CAD2EBE5B4E00ADB22D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
